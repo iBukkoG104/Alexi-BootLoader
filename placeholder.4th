@@ -1,4 +1,4 @@
-\ Alexi-BootLoader
+\ placeholder
 cr
 
 (this is just a placeholder file, I don't have anything yet :P)
