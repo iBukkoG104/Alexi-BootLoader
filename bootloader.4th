@@ -1,0 +1,1 @@
+\ Alexi-BootLoader :3cr: TEST	." This, is a bucket."	;: L1	." #            #"	;: L2	." #            #"	;: L3	." #            #"	;: L4	." ##         ## "	;: L5	."  ###########  "	;TEST cr L1 cr L2 cr L3 cr L4 cr L5 cr
