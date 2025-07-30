@@ -9,3 +9,5 @@ cr
 : L5	."  ###########  "	;
 
 TEST cr L1 cr L2 cr L3 cr L4 cr L5 cr
+
+9 1 + .    \ test whenever it's using HEX or DEC
