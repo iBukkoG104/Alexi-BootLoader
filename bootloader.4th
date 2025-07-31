@@ -2,12 +2,12 @@
 cr
 
 decimal		\ Swich to DEC for handling numbers
-\ Fnunny stuff
+\ Fnuny stuff
 : TEST	." This, is a bucket."	;
-: L1	." #            #"	;
-: L2	." #            #"	;
-: L3	." #            #"	;
-: L4	." ##          ## "	;
+: L1	." ##############"	;
+: L2	." ########### ##"	;
+: L3	." ########### ##"	;
+: L4	." ########### ## "	;
 : L5	."  ############  "	;
 \ actual stuff
 : STAR ( -- )   42 EMIT   ;
@@ -28,6 +28,6 @@ page
 
 167 68 BOX
 
-SELF.DESTRUCT
+SELF.DESTRUCT		( WARNING: THIS WILL HANG YOUR MAC INDEFINITELLY, DO A HARD-RESTART )
 
 \ End of Code.
