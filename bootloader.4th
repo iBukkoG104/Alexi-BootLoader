@@ -7,7 +7,7 @@ cr
 : L3	." #            #"	;
 : L4	." ##          ## "	;
 : L5	."  ############  "	;
-\Start of code
+\ Start of code
 
 decimal
 
