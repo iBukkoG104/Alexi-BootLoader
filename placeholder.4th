@@ -1,7 +1,7 @@
 \ placeholder
 cr
 
-(this is just a placeholder file, I don't have anything yet :P)
+( this is just a placeholder file, I don't have anything yet :P )
 
 : TEST	." This, is a bucket."	;
 : L1	." #            #"	;
