@@ -23,7 +23,7 @@ page
 TEST cr L1 cr L2 cr L3 cr L4 cr L5 cr
 9 1 + .    \ test whenever it's using HEX or DEC
 
-1000000  DO  100 100 *  LOOP   \ waste a few CPU cycles just for fun
+1000000 0 DO  100 100 *  LOOP   \ waste a few CPU cycles just for fun
 page
 
 167 68 BOX
