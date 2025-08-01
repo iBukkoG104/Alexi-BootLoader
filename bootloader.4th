@@ -15,6 +15,13 @@ decimal			( Swich to DEC for handling numbers )
 : BOX ( width height -- )   over *			( calculate the area of the box )
 		0 DO  dup I swap mod 0= IF  cr  THEN  STAR			( if the index / width != 0 prints a STAR )
   		LOOP  drop   ;
+
+: 1024x768   167 68   ;
+: 800x600   132 54   ;
+: 640x480   105 43   ;
+
+: WAIT.5   catch 5000 ms   ;
+\ OoOoOo scawwy oOoOo
 : SELF.DESTRUCT ( -- )   BEGIN  AGAIN   ;
 \ Start of code.
 
@@ -26,8 +33,8 @@ TEST cr L1 cr L2 cr L3 cr L4 cr L5 cr
 catch 2000 ms
 page
 
-167 68 BOX
+1024x768 BOX
 
-SELF.DESTRUCT			( WARNING: THIS WILL HANG YOUR MAC INDEFINITELLY, MANUALLY SHUTDOWN AND RESTART THE MACHINE. )
+WAIT.5
 
 \ End of Code.
