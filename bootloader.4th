@@ -25,6 +25,9 @@ decimal			( Swich to DEC for handling numbers )
 : SELF.DESTRUCT ( -- )   BEGIN  AGAIN   ;
 \ Start of code.
 
+
+\ apparently older verisions of OFW (<= 3) doesn't suport the PAGE word
+\ I'll have to add a check of which version of OFW if installed
 page
 
 TEST cr L1 cr L2 cr L3 cr L4 cr L5 cr
