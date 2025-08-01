@@ -26,8 +26,8 @@ decimal			( Swich to DEC for handling numbers )
 \ Start of code.
 
 
-\ apparently older verisions of OFW (<= 3) doesn't suport the PAGE word
-\ I'll have to add a check of which version of OFW if installed
+\ apparently older macs (pre-G4) lacks of rhe PAGE word
+\ I'll have to add a check to see which CPU the computer has
 page
 
 TEST cr L1 cr L2 cr L3 cr L4 cr L5 cr
