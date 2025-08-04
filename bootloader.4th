@@ -16,13 +16,16 @@ decimal			( Swich to DEC for handling numbers )
 		0 DO  dup I swap mod 0= IF  cr  THEN  STAR			( if the index / width != 0 prints a STAR )
   		LOOP  drop   ;
 
-: 1024x768   167 68   ;
-: 800x600   132 54   ;
-: 640x480   105 43   ;
+: 1024x768   167 68   ;			( Setting no. 1 )
+: 800x600   132 54   ;			( Setting no. 2 )
+: 640x480   105 43   ;			( Setting no. 3 )
 
 : WAIT.5   catch 5000 ms   ;
 \ OoOoOo scawwy oOoOo
 : SELF.DESTRUCT ( -- )   BEGIN  AGAIN   ;
+
+\ Variables
+variable RESOLUTION
 \ Start of code.
 
 
