@@ -15,6 +15,9 @@ decimal			( Swich to DEC for handling numbers )
 : BOX ( width height -- )   over *			( calculate the area of the box )
 		0 DO  dup I swap mod 0= IF  cr  THEN  STAR			( if the index / width != 0 prints a STAR )
   		LOOP  drop   ;
+: RES ( -- )   cr ." Select resolution: 1. (1024x768) | 2. (800x600) | 3. (640x480) "   ;
+: ANSWER? ( n -- n.ascii )   cr  ." > "  type  RESOLUTION !   ;
+: CONVERT.ANSWER ( n.ascii -- n );
 
 : 1024x768   167 68   ;			( Setting no. 1 )
 : 800x600   132 54   ;			( Setting no. 2 )
