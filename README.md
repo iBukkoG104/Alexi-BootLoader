@@ -10,7 +10,7 @@ I was trying to dualboot Debian 13 'Trixie' and Mac OS X 10.5 on my iBook G4 and
 
 ## TODO:
 1. Learing ANS Forth (ongoing);
-2. Making a selector for the screen's resolution (640x480 - 800x600 - 1024x786);
+2. Making a selector for the screen's resolution (640x480 - 800x600 - 1024x786) (ongoing);
 3. Making a neat TUI for 1024x786 monitors;
 4. Writing the code for detecting CHRP BootX (?) files on HDDs;
 5. Same thing but for CDs;
