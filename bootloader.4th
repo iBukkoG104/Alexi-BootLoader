@@ -24,7 +24,7 @@ variable RESOLUTION
 		0 DO  dup I swap mod 0= IF  cr  THEN  STAR			( if the index / width != 0 prints a STAR )
   		LOOP  drop   ;
 : RES ( -- )   cr ." Select resolution: 1. (1024x768) | 2. (800x600) | 3. (640x480) "   ;
-: ANSWER? ( n -- n.ascii )   cr  ." > "  type  RESOLUTION !   ;
+: ANSWER? ( n -- n.ascii )   cr  ." > "  key  RESOLUTION !   ;
 : CONVERT.ANSWER ( n.ascii -- n )
 		49 = IF  1 RESOLUTION !  ELSE
 		50 = IF  2 RESOLUTION !  ELSE
