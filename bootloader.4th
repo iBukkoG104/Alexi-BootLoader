@@ -22,14 +22,14 @@ variable RESOLUTION
 : RES ( -- )   cr ." Select resolution: 1. (1024x768) | 2. (800x600) | 3. (640x480) "   ;
 : ANSWER? ( n -- n.ascii )   cr  ." > "  type  RESOLUTION !   ;
 : CONVERT.ANSWER ( n.ascii -- n )
-		49 == IF  1 RESOLUTION !  ELSE
-		50 == IF  2 RESOLUTION !  ELSE
-		51 == IF  3 RESOLUTION !
+		49 = IF  1 RESOLUTION !  ELSE
+		50 = IF  2 RESOLUTION !  ELSE
+		51 = IF  3 RESOLUTION !
 		THEN THEN THEN   ;
 : CHECK.RES ( n -- resolution )
-		1 == IF  1024x768  ELSE
-		2 == IF  800x600  ELSE
-		3 == IF  640x480
+		1 = IF  1024x768  ELSE
+		2 = IF  800x600  ELSE
+		3 = IF  640x480
 		THEN THEN THEN   ;
 
 : 1024x768   167 68   ;			( Setting no. 1 )
