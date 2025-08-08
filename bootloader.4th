@@ -14,6 +14,10 @@ decimal			( Swich to DEC for handling numbers )
 variable RESOLUTION
 
 \ actual stuff
+: 1024x768   167 68   ;			( Setting no. 1 )
+: 800x600   132 54   ;			( Setting no. 2 )
+: 640x480   105 43   ;			( Setting no. 3 )
+
 : STAR ( -- )   42 EMIT   ;
 : STARS ( n -- )   0 DO  STAR  LOOP   ;
 : BOX ( width height -- )   over *			( calculate the area of the box )
@@ -31,10 +35,6 @@ variable RESOLUTION
 		2 = IF  800x600  ELSE
 		3 = IF  640x480
 		THEN THEN THEN   ;
-
-: 1024x768   167 68   ;			( Setting no. 1 )
-: 800x600   132 54   ;			( Setting no. 2 )
-: 640x480   105 43   ;			( Setting no. 3 )
 
 : WAIT.5   catch 5000 ms   ;
 \ OoOoOo scawwy oOoOo
