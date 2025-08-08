@@ -55,7 +55,7 @@ TEST cr L1 cr L2 cr L3 cr L4 cr L5 cr
 catch 2000 ms
 page
 
-RESOLUTION @ CHECK.ANSWER BOX
+RESOLUTION @ CHECK.RES BOX
 
 WAIT.5
 
