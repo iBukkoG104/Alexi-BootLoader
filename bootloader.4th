@@ -17,7 +17,16 @@ decimal			( Swich to DEC for handling numbers )
   		LOOP  drop   ;
 : RES ( -- )   cr ." Select resolution: 1. (1024x768) | 2. (800x600) | 3. (640x480) "   ;
 : ANSWER? ( n -- n.ascii )   cr  ." > "  type  RESOLUTION !   ;
-: CONVERT.ANSWER ( n.ascii -- n );
+: CONVERT.ANSWER ( n.ascii -- n )
+		49 == IF  1 RESOLUTION !  ELSE
+		50 == IF  2 RESOLUTION !  ELSE
+		51 == IF  3 RESOLUTION !
+		THEN THEN THEN   ;
+: CHECK.RES ( n -- resolution )
+		1 == IF  1024x768  ELSE
+		2 == IF  800x600  ELSE
+		3 == IF  640x480
+		THEN THEN THEN   ;
 
 : 1024x768   167 68   ;			( Setting no. 1 )
 : 800x600   132 54   ;			( Setting no. 2 )
@@ -31,6 +40,7 @@ decimal			( Swich to DEC for handling numbers )
 variable RESOLUTION
 \ Start of code.
 
+RES  ANSWER?  CONVERT.ANSWER
 
 \ apparently older macs (pre-G4) lacks of rhe PAGE word
 \ I'll have to add a check to see which CPU the computer has
@@ -42,7 +52,7 @@ TEST cr L1 cr L2 cr L3 cr L4 cr L5 cr
 catch 2000 ms
 page
 
-1024x768 BOX
+RESOLUTION @ CHECK.ANSWER BOX
 
 WAIT.5
 
