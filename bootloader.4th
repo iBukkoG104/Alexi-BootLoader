@@ -43,7 +43,7 @@ variable RESOLUTION
 
 \ Start of code.
 
-RES  ANSWER?  CONVERT.ANSWER
+RES  ANSWER?  RESOLUTION @  CONVERT.ANSWER
 
 \ apparently older macs (pre-G4) lacks of rhe PAGE word
 \ I'll have to add a check to see which CPU the computer has
