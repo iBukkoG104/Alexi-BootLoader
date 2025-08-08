@@ -9,6 +9,10 @@ decimal			( Swich to DEC for handling numbers )
 : L3	." ########### ##"	;
 : L4	." ########### ## "	;
 : L5	."  ############  "	;
+
+\ Variables
+variable RESOLUTION
+
 \ actual stuff
 : STAR ( -- )   42 EMIT   ;
 : STARS ( n -- )   0 DO  STAR  LOOP   ;
@@ -36,8 +40,7 @@ decimal			( Swich to DEC for handling numbers )
 \ OoOoOo scawwy oOoOo
 : SELF.DESTRUCT ( -- )   BEGIN  AGAIN   ;
 
-\ Variables
-variable RESOLUTION
+
 \ Start of code.
 
 RES  ANSWER?  CONVERT.ANSWER
