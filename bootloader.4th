@@ -33,8 +33,8 @@ variable RESOLUTION
 : CHECK.RES ( n -- resolution )
 		dup 1 = IF  1024x768  ELSE
 		dup 2 = IF  800x600  ELSE
-		dup 3 = IF  640x480
-		THEN THEN THEN  drop   ;
+		3 = IF  640x480
+		THEN THEN THEN     ;
 
 : WAIT.5   catch 5000 ms   ;
 \ OoOoOo scawwy oOoOo
